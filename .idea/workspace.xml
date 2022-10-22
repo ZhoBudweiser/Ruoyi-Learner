@@ -20,15 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66c376a9-6deb-4947-83b8-bc9822b7f18f" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ruoyi-admin/src/main/resources/application-druid.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-admin/src/main/resources/application-druid.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ruoyi-admin/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-admin/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/HelloWorld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/HelloWorldInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/SpringTutorialMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/WorldHello.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-admin/src/main/resources/Beans.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-admin/ruoyi-admin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-admin/ruoyi-admin.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,7 +61,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../software/node/node.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ruoyi-admin/src/main/resources" />
     <property name="nodejs_interpreter_path" value="$PROJECT_DIR$/../../../../../software/node/node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
@@ -59,7 +69,25 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
-  <component name="RunManager" selected="Spring Boot.RuoYiApplication">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\我的大学\2022-2023学年(大四)\2022-2023学年第一学期\专业实习与实训\RuoYi\ruoyi-admin\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.SpringTutorialMain">
+    <configuration name="SpringTutorialMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ruoyi.SpringTutorialMain" />
+      <module name="ruoyi-admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ruoyi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="quartz.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/sql/quartz.sql" />
       <script-mode>FILE</script-mode>
@@ -74,6 +102,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SpringTutorialMain" />
         <item itemvalue="Database Script.quartz.sql" />
       </list>
     </recent_temporary>
@@ -92,6 +121,9 @@
       <workItem from="1666052935643" duration="1125000" />
       <workItem from="1666054516266" duration="1833000" />
       <workItem from="1666056838140" duration="216000" />
+      <workItem from="1666058774433" duration="416000" />
+      <workItem from="1666317419577" duration="492000" />
+      <workItem from="1666400510654" duration="2722000" />
     </task>
     <servers />
   </component>
@@ -114,6 +146,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="526" y="161" key="#com.intellij.ide.util.MemberChooser" timestamp="1666402163508">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="526" y="161" key="#com.intellij.ide.util.MemberChooser/0.0.1440.920/2160.0.720.1240@0.0.1440.920" timestamp="1666402163508" />
     <state x="425" y="107" key="#quartz.sql" timestamp="1666055460964">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
@@ -122,38 +158,46 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="501" y="216" key="FileChooserDialogImpl/0.0.1440.920/2160.0.720.1240@0.0.1440.920" timestamp="1666054390160" />
-    <state width="1397" height="242" key="GridCell.Tab.0.bottom" timestamp="1666056353034">
+    <state width="1397" height="242" key="GridCell.Tab.0.bottom" timestamp="1666403781563">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="242" key="GridCell.Tab.0.bottom/0.0.1440.920/2160.0.720.1240@0.0.1440.920" timestamp="1666056353034" />
-    <state width="1397" height="242" key="GridCell.Tab.0.center" timestamp="1666056353034">
+    <state width="1397" height="242" key="GridCell.Tab.0.bottom/0.0.1440.920/2160.0.720.1240@0.0.1440.920" timestamp="1666403781563" />
+    <state width="1397" height="242" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1666317706874" />
+    <state width="1397" height="242" key="GridCell.Tab.0.center" timestamp="1666403781563">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="242" key="GridCell.Tab.0.center/0.0.1440.920/2160.0.720.1240@0.0.1440.920" timestamp="1666056353034" />
-    <state width="1397" height="242" key="GridCell.Tab.0.left" timestamp="1666056353034">
+    <state width="1397" height="242" key="GridCell.Tab.0.center/0.0.1440.920/2160.0.720.1240@0.0.1440.920" timestamp="1666403781563" />
+    <state width="1397" height="242" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1666317706874" />
+    <state width="1397" height="242" key="GridCell.Tab.0.left" timestamp="1666403781563">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="242" key="GridCell.Tab.0.left/0.0.1440.920/2160.0.720.1240@0.0.1440.920" timestamp="1666056353034" />
-    <state width="1397" height="242" key="GridCell.Tab.0.right" timestamp="1666056353034">
+    <state width="1397" height="242" key="GridCell.Tab.0.left/0.0.1440.920/2160.0.720.1240@0.0.1440.920" timestamp="1666403781563" />
+    <state width="1397" height="242" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1666317706874" />
+    <state width="1397" height="242" key="GridCell.Tab.0.right" timestamp="1666403781563">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="242" key="GridCell.Tab.0.right/0.0.1440.920/2160.0.720.1240@0.0.1440.920" timestamp="1666056353034" />
-    <state width="1397" height="242" key="GridCell.Tab.1.bottom" timestamp="1666056353034">
+    <state width="1397" height="242" key="GridCell.Tab.0.right/0.0.1440.920/2160.0.720.1240@0.0.1440.920" timestamp="1666403781563" />
+    <state width="1397" height="242" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1666317706874" />
+    <state width="1397" height="242" key="GridCell.Tab.1.bottom" timestamp="1666362411145">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="242" key="GridCell.Tab.1.bottom/0.0.1440.920/2160.0.720.1240@0.0.1440.920" timestamp="1666056353034" />
-    <state width="1397" height="242" key="GridCell.Tab.1.center" timestamp="1666056353034">
+    <state width="1397" height="242" key="GridCell.Tab.1.bottom/0.0.1440.920/2160.0.720.1240@0.0.1440.920" timestamp="1666362411145" />
+    <state width="1397" height="242" key="GridCell.Tab.1.bottom/0.0.1440.920@0.0.1440.920" timestamp="1666317706874" />
+    <state width="1397" height="242" key="GridCell.Tab.1.center" timestamp="1666362411145">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="242" key="GridCell.Tab.1.center/0.0.1440.920/2160.0.720.1240@0.0.1440.920" timestamp="1666056353034" />
-    <state width="1397" height="242" key="GridCell.Tab.1.left" timestamp="1666056353034">
+    <state width="1397" height="242" key="GridCell.Tab.1.center/0.0.1440.920/2160.0.720.1240@0.0.1440.920" timestamp="1666362411145" />
+    <state width="1397" height="242" key="GridCell.Tab.1.center/0.0.1440.920@0.0.1440.920" timestamp="1666317706874" />
+    <state width="1397" height="242" key="GridCell.Tab.1.left" timestamp="1666362411145">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="242" key="GridCell.Tab.1.left/0.0.1440.920/2160.0.720.1240@0.0.1440.920" timestamp="1666056353034" />
-    <state width="1397" height="242" key="GridCell.Tab.1.right" timestamp="1666056353034">
+    <state width="1397" height="242" key="GridCell.Tab.1.left/0.0.1440.920/2160.0.720.1240@0.0.1440.920" timestamp="1666362411145" />
+    <state width="1397" height="242" key="GridCell.Tab.1.left/0.0.1440.920@0.0.1440.920" timestamp="1666317706874" />
+    <state width="1397" height="242" key="GridCell.Tab.1.right" timestamp="1666362411145">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="242" key="GridCell.Tab.1.right/0.0.1440.920/2160.0.720.1240@0.0.1440.920" timestamp="1666056353034" />
+    <state width="1397" height="242" key="GridCell.Tab.1.right/0.0.1440.920/2160.0.720.1240@0.0.1440.920" timestamp="1666362411145" />
+    <state width="1397" height="242" key="GridCell.Tab.1.right/0.0.1440.920@0.0.1440.920" timestamp="1666317706874" />
     <state x="222" y="69" key="SettingsEditor" timestamp="1666056084612">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
@@ -162,5 +206,9 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="438" y="269" key="jetbrains.nodejs.interpreters-dialog/0.0.1440.920/2160.0.720.1240@0.0.1440.920" timestamp="1666054391433" />
+    <state x="197" y="143" key="spring file set editor" timestamp="1666400914656">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="197" y="143" key="spring file set editor/0.0.1440.920/2160.0.720.1240@0.0.1440.920" timestamp="1666400914656" />
   </component>
 </project>
