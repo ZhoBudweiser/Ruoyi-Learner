@@ -199,6 +199,12 @@
                 <version>${ruoyi.version}</version>
             </dependency>
 
+            <dependency>
+                <artifactId>sys-stu</artifactId>
+                <groupId>com.ruoyi</groupId>
+                <version>${ruoyi.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
@@ -209,6 +215,7 @@
         <module>ruoyi-quartz</module>
         <module>ruoyi-generator</module>
         <module>ruoyi-common</module>
+        <module>sys-stu</module>
     </modules>
     <packaging>pom</packaging>
 

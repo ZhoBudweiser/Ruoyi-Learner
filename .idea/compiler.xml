@@ -12,6 +12,7 @@
         <module name="ruoyi-quartz" />
         <module name="ruoyi-common" />
         <module name="ruoyi-system" />
+        <module name="sys-stu" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -22,6 +23,7 @@
       <module name="ruoyi-generator" target="1.8" />
       <module name="ruoyi-quartz" target="1.8" />
       <module name="ruoyi-system" target="1.8" />
+      <module name="sys-stu" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

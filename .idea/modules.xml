@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/ruoyi-generator/ruoyi-generator.iml" filepath="$PROJECT_DIR$/ruoyi-generator/ruoyi-generator.iml" />
       <module fileurl="file://$PROJECT_DIR$/ruoyi-quartz/ruoyi-quartz.iml" filepath="$PROJECT_DIR$/ruoyi-quartz/ruoyi-quartz.iml" />
       <module fileurl="file://$PROJECT_DIR$/ruoyi-system/ruoyi-system.iml" filepath="$PROJECT_DIR$/ruoyi-system/ruoyi-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sys-stu/sys-stu.iml" filepath="$PROJECT_DIR$/sys-stu/sys-stu.iml" />
     </modules>
   </component>
 </project>

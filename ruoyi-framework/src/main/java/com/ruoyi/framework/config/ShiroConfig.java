@@ -276,7 +276,7 @@ public class ShiroConfig
         shiroFilterFactoryBean.setUnauthorizedUrl(unauthorizedUrl);
         // Shiro连接约束配置，即过滤链的定义
         LinkedHashMap<String, String> filterChainDefinitionMap = new LinkedHashMap<>();
-        // 对静态资源设置匿名访问
+        // 对静态资源设置匿名访问，不需要登录即可直接访问，定义时什么顺序，匹配也是这个顺序，匹配到即跳过后面
         filterChainDefinitionMap.put("/favicon.ico**", "anon");
         filterChainDefinitionMap.put("/ruoyi.png**", "anon");
         filterChainDefinitionMap.put("/html/**", "anon");
@@ -292,7 +292,7 @@ public class ShiroConfig
         filterChainDefinitionMap.put("/logout", "logout");
         // 不需要拦截的访问
         filterChainDefinitionMap.put("/login", "anon,captchaValidate");
-        // 注册相关
+        // 注册相关，放到最后
         filterChainDefinitionMap.put("/register", "anon,captchaValidate");
         // 系统权限列表
         // filterChainDefinitionMap.putAll(SpringUtils.getBean(IMenuService.class).selectPermsAll());
@@ -302,7 +302,7 @@ public class ShiroConfig
         filters.put("syncOnlineSession", syncOnlineSessionFilter());
         filters.put("captchaValidate", captchaValidateFilter());
         filters.put("kickout", kickoutSessionFilter());
-        // 注销成功，则跳转到指定页面
+        // 注销成功，则跳转到指定页面    
         filters.put("logout", logoutFilter());
         shiroFilterFactoryBean.setFilters(filters);
 

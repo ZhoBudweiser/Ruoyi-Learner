@@ -67,6 +67,11 @@
             <artifactId>ruoyi-generator</artifactId>
         </dependency>
 
+        <dependency>
+            <artifactId>sys-stu</artifactId>
+            <groupId>com.ruoyi</groupId>
+        </dependency>
+
     </dependencies>
 
     <build>
