@@ -14,4 +14,6 @@ public interface SysStudentMapper {
     public int deleteSysStudentByStudentId(Long studentId);
 
     public int deleteSysStudentByStudentIds(String[] studentIds);
+
+    public int insertSysStudent(SysStudent sysStudent);
 }
