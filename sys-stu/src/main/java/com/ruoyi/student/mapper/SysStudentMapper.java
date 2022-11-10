@@ -5,7 +5,7 @@ import com.ruoyi.student.domain.SysStudent;
 import java.util.List;
 
 public interface SysStudentMapper {
-    public SysStudent selectStudentByStudentId(Long studentId);
+    public SysStudent selectSysStudentByStudentId(Long studentId);
 
     public List<SysStudent> selectSysStudentList(SysStudent sysStudent);
 

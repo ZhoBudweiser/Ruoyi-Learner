@@ -16,8 +16,8 @@ public class SysStudentServiceImpl implements ISysStudentService {
     private SysStudentMapper sysStudentMapper;
 
     @Override
-    public SysStudent selectStudentByStudentId(Long studentId) {
-        return sysStudentMapper.selectStudentByStudentId(studentId);
+    public SysStudent selectSysStudentByStudentId(Long studentId) {
+        return sysStudentMapper.selectSysStudentByStudentId(studentId);
     }
 
     @Override

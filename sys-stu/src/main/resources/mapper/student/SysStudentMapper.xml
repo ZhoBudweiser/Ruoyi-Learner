@@ -5,7 +5,7 @@
 <mapper namespace="com.ruoyi.student.mapper.SysStudentMapper">
 
     <resultMap type="SysStudent" id="SysStudentResult">
-        <id     property="StudentId"       column="student_id"        />
+        <id     property="studentId"       column="student_id"        />
         <result property="studentName"     column="student_name"      />
         <result property="studentAge"      column="student_age"       />
         <result property="studentHobby"    column="student_hobby"     />
@@ -19,10 +19,15 @@
 		from    sys_student
     </sql>
 
+    <select id="selectSysStudentByStudentId" parameterType="Long" resultMap="SysStudentResult">
+        <include refid="selectSysStudentVo"/>
+        where student_id = #{studentId}
+    </select>
+
     <select id="selectSysStudentList" parameterType="SysStudent" resultMap="SysStudentResult">
         <include refid="selectSysStudentVo"/>
         <where>
-            <if test="studentName != null and studentName != ''"> and student like concat('%', #{studentName}, '%')</if>
+            <if test="studentName != null and studentName != ''"> and student_name like concat('%', #{studentName}, '%')</if>
             <if test="studentAge != null "> and student_age = #{studentAge}</if>
             <if test="studentHobby != null and studentSex != ''"> and student_sex = #{studentSex}</if>
             <if test="studentStatus != null and studentStatus != ''"> and student_status = #{studentStatus}</if>
@@ -43,7 +48,7 @@
 
     <update id="updateSysStudent" parameterType="SysStudent">
         update sys_student
-        <trim prefix="(" suffix=")" suffixOverrides=",">
+        <trim prefix="SET" suffixOverrides=",">
             <if test="studentName != null">student_name = #{studentName},</if>
             <if test="studentAge != null">student_age = #{studentAge},</if>
             <if test="studentHobby != null">student_hobby = #{studentHobby},</if>
